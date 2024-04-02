@@ -10,8 +10,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/channel" element={<Channel/>} />
-        <Route path="/videodetail" element={<VideoDetail/> }/>
-        <Route path="/search" element={<Search />}/>
+        <Route path="/videodetail/:id" element={<VideoDetail/> }/>
+        <Route path="/search/:id" element={<Search />}/>
       </Routes>
     </Stack>
   )

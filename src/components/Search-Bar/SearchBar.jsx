@@ -1,17 +1,18 @@
 import { IconButton, Paper } from "@mui/material"
 import SearchIcon from '@mui/icons-material/Search';
 import { colors } from "../../contants/colors" 
-// import { useNavigation } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const SearchBar = () => {
 
-  // const navigate = useNavigation('');
+  const navigate = useNavigate('');
   const [value , setvalue] = useState('')
 
   const hendleSubmit = e => {
     e.preventDefault();
-    // navigate(`search/${value}`)
+    navigate(`search/${value}`);
+    setvalue('')
   }
 
   return (
